@@ -1,0 +1,64 @@
+
+body{
+    font-style: normal;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left:25px;
+    padding: 10px;
+    margin-right: 100px;
+   
+  
+  }
+
+h1{
+    color:black;
+    background-color: antiquewhite;
+
+}
+
+p{
+   margin-left: "10%";
+   font:500px;
+
+}
+
+
+img{
+    height: 155px;
+    width: 155px;
+    float: right; 
+    margin-right: 50px; 
+    margin-left: 20px;
+    
+}
+
+
+
+a{
+    color: blue;
+  }
+a:hover {
+    color: green;
+  }
+
+h2#super:hover{
+    background-color: yellowgreen;
+} 
+
+
+
+
+span#no:hover{
+
+    background-color: aquamarine;
+}
+
+.container{
+
+    margin-left: 30px;
+}
+
