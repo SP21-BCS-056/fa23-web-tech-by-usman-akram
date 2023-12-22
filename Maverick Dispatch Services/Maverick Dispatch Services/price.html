@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FASTER - Logistics Company Website Template</title>
+    <title>Maverick Dispatch Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -185,7 +185,73 @@
     </div>
     <!-- Pricing Plan End -->
 
-    
+
+<!-- Calculator Form Start -->
+<div class="container mt-5">
+    <h2 class="text-primary text-center mb-4">Calculator</h2>
+    <form id="calculatorForm" action="/your-server-endpoint" method="POST">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="operand1">Operand 1:</label>
+                <input type="text" class="form-control" id="operand1" name="operand1" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="operation">Operation:</label>
+                <select class="form-control" id="operation" name="operation" required>
+                    <option value="add">Addition</option>
+                    <option value="subtract">Subtraction</option>
+                    <option value="multiply">Multiplication</option>
+                    <option value="divide">Division</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="operand2">Operand 2:</label>
+                <input type="text" class="form-control" id="operand2" name="operand2" required>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+    </form>
+</div>
+<!-- Calculator Form End -->
+
+<script>
+    function calculate() {
+        var operand1 = parseFloat(document.getElementById('operand1').value);
+        var operand2 = parseFloat(document.getElementById('operand2').value);
+        var operation = document.getElementById('operation').value;
+
+        // Perform client-side calculation (you can modify this part as needed)
+        var result;
+        switch (operation) {
+            case 'add':
+                result = operand1 + operand2;
+                break;
+            case 'subtract':
+                result = operand1 - operand2;
+                break;
+            case 'multiply':
+                result = operand1 * operand2;
+                break;
+            case 'divide':
+                result = operand1 / operand2;
+                break;
+            default:
+                alert('Invalid operation');
+                return;
+        }
+
+        // Display the result (you can modify this part as needed)
+        alert('Result: ' + result);
+
+        // Optional: Submit the form to the server
+        document.getElementById('calculatorForm').submit();
+    }
+</script>
+
+
+
+</body>
+</html>
 
 
    <!-- Footer Start -->
@@ -282,3 +348,6 @@
 </body>
 
 </html>
+
+
+
